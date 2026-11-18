@@ -1,0 +1,4 @@
+User-agent: *
+# ЗАПОЛНИТЬ при запуске: открыть индексацию (Allow: /) и указать настоящий домен
+Disallow: /
+Sitemap: https://example.ru/sitemap.xml

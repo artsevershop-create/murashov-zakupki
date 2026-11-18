@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<script>document.documentElement.classList.add('js')</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Курс по закупкам для поставщиков-новичков — А. Мурашов</title>
+<meta name="description" content="Программа для новичков: как участвовать в закупках со стороны поставщика. 8 занятий по 2 часа — поиск закупки, расчёт цены, заявка, торги, исполнение договора.">
+<!-- ЗАПОЛНИТЬ при запуске: настоящий домен вместо https://example.ru/ и убрать noindex -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://example.ru/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Участие в закупках со стороны поставщика — программа для новичков">
+<meta property="og:description" content="8 занятий по 2 часа: найти закупку, оценить условия, рассчитать цену, подать заявку и пройти шаги после победы.">
+<meta property="og:url" content="https://example.ru/">
+<meta property="og:image" content="https://example.ru/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F2A27">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/sofia-sans-extra-condensed-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css?v=2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "@id": "https://example.ru/#course",
+      "name": "Программа обучения новичков участию в закупках со стороны поставщика",
+      "description": "8 занятий по 2 часа. Итог: участник умеет найти подходящую закупку, оценить её условия, подготовить и подать заявку, понимает основные шаги после победы.",
+      "educationalLevel": "Начинающий",
+      "inLanguage": "ru",
+      "timeRequired": "PT16H",
+      "teaches": ["Поиск закупок", "Чтение документации и оценка рисков", "Расчёт цены", "Подготовка и подача заявки", "Торги", "Исполнение договора"],
+      "provider": { "@type": "Person", "name": "Александр Мурашов" },
+      "author": { "@type": "Person", "name": "Александр Мурашов" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Нужен ли опыт в закупках?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Уровень программы — начинающий. Первое занятие объясняет, как устроены закупки и какая роль у поставщика." } },
+        { "@type": "Question", "name": "Подойдёт ли программа для моей страны и вида закупок?", "acceptedAnswer": { "@type": "Answer", "text": "Программа универсальная; конкретные площадки, документы, сроки и правовые требования адаптируются под страну и вид закупок." } },
+        { "@type": "Question", "name": "Будет ли практика?", "acceptedAnswer": { "@type": "Answer", "text": "Да, практика есть на каждом из восьми занятий, а в конце — итоговая работа на своей закупке." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="grain">
+<a class="skip" href="#main">Перейти к содержанию</a>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8"/><path d="M20 20l7 7"/><path d="M10.5 14h7M14 10.5v7" opacity=".45"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 32 32"><path d="M8 4h11l6 6v18H8z"/><path d="M19 4v6h6"/><path d="M12 16h9M12 20h9M12 24h5"/></symbol>
+    <symbol id="i-calc" viewBox="0 0 32 32"><rect x="7" y="4" width="18" height="24" rx="3"/><path d="M11 9h10v4H11z"/><path d="M11.5 18h1M16 18h1M20.5 18h1M11.5 23h1M16 23h1M20.5 23h1"/></symbol>
+    <symbol id="i-send" viewBox="0 0 32 32"><path d="M5 15L27 5l-6 22-6-9z"/><path d="M15 18L27 5"/></symbol>
+    <symbol id="i-steps" viewBox="0 0 32 32"><path d="M4 6h6v6h6v6h6v6h6"/><path d="M4 26h24" opacity=".45"/></symbol>
+    <symbol id="i-contract" viewBox="0 0 32 32"><path d="M7 4h18v24H7z"/><path d="M11 10h10M11 14h10M11 18h6"/><path d="M12 24c2-3 3 1 5-1s2 0 4-1"/></symbol>
+    <symbol id="i-key" viewBox="0 0 32 32"><circle cx="11" cy="16" r="5"/><path d="M16 16h12M24 16v4M28 16v3"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 32 32"><rect x="5" y="7" width="22" height="20" rx="3"/><path d="M5 13h22M11 4v6M21 4v6"/><path d="M10 18h3M15 18h3M20 18h3M10 22h3M15 22h3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="5"/><path d="M10 16.5l4 4 8-9"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 32 32"><path d="M4 9h9l3 3h12v14H4z"/><path d="M4 15h24" opacity=".45"/></symbol>
+    <symbol id="i-risk" viewBox="0 0 32 32"><path d="M16 5l12 21H4z"/><path d="M16 13v6M16 22.5v.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="hdr" data-header>
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top" aria-label="Александр Мурашов — курс по закупкам, на главную">
+      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__txt"><b>Александр Мурашов</b><small>закупки для поставщика</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#program">Программа</a>
+      <a href="#trainer">Тренажёр</a>
+      <a href="#final">Итоговая работа</a>
+      <a href="#materials">Материалы</a>
+      <a href="#format">Формат</a>
+      <a href="#author">Автор</a>
+      <a class="nav__cta" href="#signup">Записаться</a>
+    </nav>
+    <a class="btn btn--sm hdr__cta" href="#signup" data-magnetic>Записаться</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-theme="night" aria-labelledby="h1">
+  <div class="hero__bg" aria-hidden="true">
+    <svg class="hero__steps" viewBox="0 0 1440 800" preserveAspectRatio="none">
+      <path pathLength="1" d="M-20 120 H180 V190 H360 V250 H520 V330 H700 V380 H860 V450 H1020 V500 H1180 V560 H1460"/>
+      <path class="limit" pathLength="1" d="M-20 610 H1460"/>
+    </svg>
+  </div>
+  <div class="wrap hero__in">
+    <div class="hero__text">
+      <p class="eyebrow hero__k">Программа обучения новичков</p>
+      <h1 id="h1" class="hero__h1">
+        <span class="ln"><span>Участие в&nbsp;закупках</span></span>
+        <span class="ln"><span><mark class="hl hl--hero">со стороны поставщика</mark></span></span>
+      </h1>
+      <p class="lead hero__lead">8&nbsp;занятий по&nbsp;2&nbsp;часа. Вы научитесь находить подходящую закупку, оценивать её условия, готовить и&nbsp;подавать заявку — и&nbsp;поймёте основные шаги после победы.</p>
+      <div class="hero__cta">
+        <a class="btn btn--hl" href="#signup" data-magnetic>Записаться на&nbsp;курс <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="#program">Смотреть программу</a>
+      </div>
+      <ul class="hero__facts" aria-label="Коротко о курсе">
+        <li><b class="num">8 × 2 ч</b><span>занятий по&nbsp;два часа</span></li>
+        <li><b>Новичкам</b><span>уровень: начинающий</span></li>
+        <li><b>Практика</b><span>на&nbsp;каждом занятии</span></li>
+      </ul>
+    </div>
+
+    <figure class="doc hero__doc" aria-label="Учебный пример: карта закупки">
+      <div class="doc__clip" aria-hidden="true"></div>
+      <header class="doc__head">
+        <span class="doc__title">Карта закупки</span>
+        <span class="doc__tag">учебный пример</span>
+      </header>
+      <dl class="doc__rows">
+        <div><dt>Предмет</dt><dd>Поставка офисной бумаги</dd></div>
+        <div><dt>Начальная цена</dt><dd class="num">480 000 ₽</dd></div>
+        <div><dt>Подача заявок</dt><dd>через 6&nbsp;дней, до&nbsp;12:00</dd></div>
+        <div><dt>Обеспечение заявки</dt><dd>требуется</dd></div>
+      </dl>
+      <ul class="doc__check">
+        <li><i></i>Требования к&nbsp;участнику</li>
+        <li><i></i>Состав заявки и&nbsp;формы</li>
+        <li><i></i>Сроки и&nbsp;место поставки</li>
+        <li class="risk"><i></i><span><mark class="hl hl--risk">Риск:</mark> штраф за&nbsp;просрочку</span></li>
+        <li><i></i>Вопрос заказчику — 1</li>
+      </ul>
+      <div class="doc__sum">
+        <span>Минимальная цена<b class="num">355 178 ₽</b></span>
+        <span>Рабочая цена<b class="num">408 455 ₽</b></span>
+      </div>
+      <div class="stamp hero__stamp" aria-hidden="true"><span>Заявка<br>подана</span></div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ ПУТЬ ЗАКУПКИ / РЕЗУЛЬТАТ ============ -->
+<section class="sheet sec" id="result" aria-labelledby="h-result">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 id="h-result" data-split>Программа повторяет путь закупки — от&nbsp;публикации до&nbsp;договора</h2>
+      <p class="lead">Итог курса: участник умеет найти подходящую закупку, оценить её условия, подготовить и&nbsp;подать заявку, понимает основные шаги после победы.</p>
+    </div>
+
+    <ol class="path" aria-label="Этапы закупки и занятия курса">
+      <li class="path__st">
+        <span class="path__dot" aria-hidden="true"></span>
+        <p class="path__stage">Публикация</p>
+        <div class="path__card">
+          <svg class="gl" aria-hidden="true"><use href="#i-search"/></svg>
+          <h3>Найти подходящую закупку</h3>
+          <p>Подготовить компанию или&nbsp;ИП к&nbsp;участию, искать процедуры и&nbsp;отсеивать неподходящие.</p>
+          <p class="chips"><a href="#l2">Занятие 2</a><a href="#l3">Занятие 3</a></p>
+        </div>
+      </li>
+      <li class="path__st">
+        <span class="path__dot" aria-hidden="true"></span>
+        <p class="path__stage">Подача заявок</p>
+        <div class="path__card">
+          <svg class="gl" aria-hidden="true"><use href="#i-doc"/></svg>
+          <h3>Оценить условия и&nbsp;подать заявку</h3>
+          <p>Прочитать документацию, увидеть риски, рассчитать цену и&nbsp;собрать заявку без критических пропусков.</p>
+          <p class="chips"><a href="#l4">Занятие 4</a><a href="#l5">Занятие 5</a><a href="#l6">Занятие 6</a></p>
+        </div>
+      </li>
+      <li class="path__st">
+        <span class="path__dot" aria-hidden="true"></span>
+        <p class="path__stage">Выбор победителя</p>
+        <div class="path__card">
+          <svg class="gl" aria-hidden="true"><use href="#i-steps"/></svg>
+          <h3>Пройти торги и&nbsp;подведение итогов</h3>
+          <p>Держать заранее установленный предел цены, читать протоколы, разбирать причины отклонения.</p>
+          <p class="chips"><a href="#l7">Занятие 7</a></p>
+        </div>
+      </li>
+      <li class="path__st">
+        <span class="path__dot" aria-hidden="true"></span>
+        <p class="path__stage">Договор и&nbsp;исполнение</p>
+        <div class="path__card">
+          <svg class="gl" aria-hidden="true"><use href="#i-contract"/></svg>
+          <h3>Понимать шаги после победы</h3>
+          <p>Проверить договор, организовать поставку или работы, сдать результат и&nbsp;проконтролировать оплату.</p>
+          <p class="chips"><a href="#l8">Занятие 8</a></p>
+        </div>
+      </li>
+    </ol>
+    <p class="path__note"><a href="#l1">Занятие 1</a> — карта всего процесса: участники, этапы, термины и&nbsp;типовые риски новичка.</p>
+  </div>
+</section>
+
+<!-- ============ ПРОГРАММА ============ -->
+<section class="sec program" id="program" aria-labelledby="h-program">
+  <div class="wrap program__grid">
+    <aside class="program__aside">
+      <div class="program__sticky">
+        <h2 id="h-program" data-split>Программа: 8&nbsp;занятий по&nbsp;2&nbsp;часа</h2>
+        <p class="program__uni">Программа универсальная; конкретные площадки, документы, сроки и&nbsp;правовые требования адаптируются под страну и&nbsp;вид закупок.</p>
+        <ol class="rail" aria-label="Навигация по занятиям">
+          <li><a href="#l1"><span class="num">1</span>Как устроены закупки</a></li>
+          <li><a href="#l2"><span class="num">2</span>Подготовка поставщика</a></li>
+          <li><a href="#l3"><span class="num">3</span>Поиск и&nbsp;отбор закупок</a></li>
+          <li><a href="#l4"><span class="num">4</span>Документация и&nbsp;риски</a></li>
+          <li><a href="#l5"><span class="num">5</span>Экономика и&nbsp;цена</a></li>
+          <li><a href="#l6"><span class="num">6</span>Подготовка заявки</a></li>
+          <li><a href="#l7"><span class="num">7</span>Торги и&nbsp;итоги</a></li>
+          <li><a href="#l8"><span class="num">8</span>Контракт и&nbsp;исполнение</a></li>
+        </ol>
+      </div>
+    </aside>
+
+    <div class="lessons">
+      <article class="lesson" id="l1">
+        <p class="lesson__n"><span>Занятие 1</span><svg class="gl" aria-hidden="true"><use href="#i-steps"/></svg></p>
+        <h3>Как устроены закупки</h3>
+        <p class="lesson__goal"><b>Цель:</b> понять процесс закупки и&nbsp;роль поставщика.</p>
+        <ul class="lesson__list">
+          <li>Участники: заказчик, поставщик, оператор площадки.</li>
+          <li>Этапы: публикация, подача заявок, выбор победителя, заключение и&nbsp;исполнение договора.</li>
+          <li>Государственные и&nbsp;коммерческие закупки: различия.</li>
+          <li>Термины: заявка, лот, начальная цена, обеспечение, протокол.</li>
+          <li>Типовые риски новичка.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Разобрать схему закупочного процесса и&nbsp;роли участников на&nbsp;примере процедуры.</p>
+      </article>
+
+      <article class="lesson" id="l2">
+        <p class="lesson__n"><span>Занятие 2</span><svg class="gl" aria-hidden="true"><use href="#i-key"/></svg></p>
+        <h3>Подготовка поставщика</h3>
+        <p class="lesson__goal"><b>Цель:</b> понять, что нужно для допуска.</p>
+        <ul class="lesson__list">
+          <li>Проверка готовности компании или&nbsp;ИП.</li>
+          <li>Регистрация в&nbsp;системах и&nbsp;на&nbsp;электронных площадках.</li>
+          <li>Электронная подпись и&nbsp;доступы.</li>
+          <li>Документы и&nbsp;сведения о&nbsp;поставщике.</li>
+          <li>Представители, полномочия, распределение задач.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Персональный чек-лист готовности поставщика.</p>
+      </article>
+
+      <article class="lesson" id="l3">
+        <p class="lesson__n"><span>Занятие 3</span><svg class="gl" aria-hidden="true"><use href="#i-search"/></svg></p>
+        <h3>Поиск закупок и&nbsp;первичный отбор</h3>
+        <p class="lesson__goal"><b>Цель:</b> находить подходящие процедуры и&nbsp;отсеивать неподходящие.</p>
+        <ul class="lesson__list">
+          <li>Поиск по&nbsp;ключевым словам, категориям, регионам и&nbsp;срокам.</li>
+          <li>Фильтры и&nbsp;уведомления.</li>
+          <li>Оценка заказчика и&nbsp;предмета закупки.</li>
+          <li>Проверка сроков, объёма, требований.</li>
+          <li>Решение: участвовать, запросить уточнения или&nbsp;отказаться.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Найти несколько закупок и&nbsp;выбрать одну для анализа.</p>
+      </article>
+
+      <article class="lesson" id="l4">
+        <p class="lesson__n"><span>Занятие 4</span><svg class="gl" aria-hidden="true"><use href="#i-doc"/></svg></p>
+        <h3>Чтение документации и&nbsp;оценка рисков</h3>
+        <ul class="lesson__list">
+          <li>Где искать требования к&nbsp;участнику и&nbsp;составу заявки.</li>
+          <li>Как читать техническое задание и&nbsp;проект договора.</li>
+          <li>Сроки, место, порядок поставки или&nbsp;работ.</li>
+          <li>Обеспечение заявки и&nbsp;исполнения.</li>
+          <li>Штрафы, ответственность, приёмка и&nbsp;оплата.</li>
+          <li>Основания для отклонения.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Карта закупки: требования, сроки, документы, риски, вопросы заказчику.</p>
+      </article>
+
+      <article class="lesson" id="l5">
+        <p class="lesson__n"><span>Занятие 5</span><svg class="gl" aria-hidden="true"><use href="#i-calc"/></svg></p>
+        <h3>Экономика участия и&nbsp;расчёт цены</h3>
+        <ul class="lesson__list">
+          <li>Себестоимость.</li>
+          <li>Доставка, налоги, комиссии, упаковка.</li>
+          <li>Отсрочка оплаты и&nbsp;оборотные средства.</li>
+          <li>Минимально допустимая цена и&nbsp;плановая маржа.</li>
+          <li>Когда снижение цены опасно.</li>
+          <li>Решение об&nbsp;участии.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Рабочая и&nbsp;минимальная цена для выбранной закупки. <a class="link" href="#trainer">Попробовать в&nbsp;тренажёре</a></p>
+      </article>
+
+      <article class="lesson" id="l6">
+        <p class="lesson__n"><span>Занятие 6</span><svg class="gl" aria-hidden="true"><use href="#i-send"/></svg></p>
+        <h3>Подготовка и&nbsp;подача заявки</h3>
+        <ul class="lesson__list">
+          <li>Перечень документов.</li>
+          <li>Формы и&nbsp;декларации.</li>
+          <li>Техническое и&nbsp;ценовое предложение.</li>
+          <li>Полномочия подписанта и&nbsp;сроки документов.</li>
+          <li>Типовые ошибки: неполный комплект, противоречия, неверные данные, опоздание.</li>
+          <li>Финальная проверка.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Учебная заявка и&nbsp;проверка по&nbsp;чек-листу.</p>
+      </article>
+
+      <article class="lesson" id="l7">
+        <p class="lesson__n"><span>Занятие 7</span><svg class="gl" aria-hidden="true"><use href="#i-steps"/></svg></p>
+        <h3>Торги и&nbsp;подведение итогов</h3>
+        <ul class="lesson__list">
+          <li>Ценовой этап на&nbsp;площадке.</li>
+          <li>Тактика и&nbsp;заранее установленный предел цены.</li>
+          <li>Технические сбои.</li>
+          <li>Протоколы и&nbsp;статус заявки.</li>
+          <li>Отклонение и&nbsp;анализ причины.</li>
+          <li>Вопросы и&nbsp;обжалование с&nbsp;учётом местных правил.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>Симуляция торгов и&nbsp;разбор протокола. <a class="link" href="#trainer">Попробовать в&nbsp;тренажёре</a></p>
+      </article>
+
+      <article class="lesson" id="l8">
+        <p class="lesson__n"><span>Занятие 8</span><svg class="gl" aria-hidden="true"><use href="#i-contract"/></svg></p>
+        <h3>Контракт и&nbsp;исполнение</h3>
+        <ul class="lesson__list">
+          <li>Проверка проекта договора.</li>
+          <li>Сроки и&nbsp;порядок заключения.</li>
+          <li>Обеспечение исполнения.</li>
+          <li>Организация поставки или&nbsp;работ.</li>
+          <li>Документы при передаче и&nbsp;приёмке.</li>
+          <li>Счета, закрывающие документы, контроль оплаты.</li>
+          <li>Изменения, претензии, споры.</li>
+        </ul>
+        <p class="practice"><b>Практика</b>План исполнения договора и&nbsp;список контрольных сроков.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ТРЕНАЖЁР (сигнатурный момент) ============ -->
+<section class="trainer sec" id="trainer" data-theme="night" aria-labelledby="h-trainer">
+  <div class="wrap">
+    <div class="sec__head sec__head--wide">
+      <h2 id="h-trainer" data-split>Тренажёр: предел цены — до&nbsp;начала торгов</h2>
+      <p class="lead">Учебная модель к&nbsp;занятиям 5 и&nbsp;7. Сначала посчитайте минимальную и&nbsp;рабочую цену, потом попробуйте удержаться на&nbsp;торгах и&nbsp;не&nbsp;уйти в&nbsp;убыток.</p>
+    </div>
+
+    <div class="tr">
+      <form class="tr__calc" id="calc" aria-labelledby="calc-h" novalidate>
+        <h3 id="calc-h"><span class="tr__step">Шаг 1</span>Экономика участия</h3>
+        <div class="fld"><label for="c-cost">Себестоимость партии, ₽</label><input id="c-cost" inputmode="numeric" value="300 000" data-num></div>
+        <div class="fld-2">
+          <div class="fld"><label for="c-ship">Доставка, ₽</label><input id="c-ship" inputmode="numeric" value="18 000" data-num></div>
+          <div class="fld"><label for="c-pack">Упаковка, ₽</label><input id="c-pack" inputmode="numeric" value="4 000" data-num></div>
+        </div>
+        <div class="fld-2">
+          <div class="fld"><label for="c-tax">Налоги и&nbsp;комиссии, % от&nbsp;цены</label><input id="c-tax" inputmode="decimal" value="8" data-num></div>
+          <div class="fld"><label for="c-margin">Плановая маржа, %</label><input id="c-margin" inputmode="decimal" value="12" data-num></div>
+        </div>
+        <div class="fld-2">
+          <div class="fld"><label for="c-days">Отсрочка оплаты, дней</label><input id="c-days" inputmode="numeric" value="30" data-num></div>
+          <div class="fld"><label for="c-rate">Цена денег, % годовых</label><input id="c-rate" inputmode="decimal" value="18" data-num></div>
+        </div>
+        <div class="tr__out" aria-live="polite">
+          <p class="tr__min"><span>Минимальная цена</span><b class="num" id="o-min">—</b><small>ниже — работа в&nbsp;убыток</small></p>
+          <p class="tr__work"><span>Рабочая цена</span><b class="num" id="o-work">—</b><small>с&nbsp;плановой маржой</small></p>
+        </div>
+        <p class="tr__formula">Учебная формула: (себестоимость + доставка + упаковка + стоимость отсрочки) ÷ (1 − доля налогов и&nbsp;комиссий [− маржа]). Реальные налоги и&nbsp;комиссии зависят от&nbsp;режима и&nbsp;площадки — их&nbsp;разбираем на&nbsp;занятии&nbsp;5.</p>
+      </form>
+
+      <div class="tr__auc" aria-labelledby="auc-h">
+        <h3 id="auc-h"><span class="tr__step">Шаг 2</span>Учебные торги на&nbsp;понижение</h3>
+        <div class="auc__set">
+          <div class="fld"><label for="a-start">Начальная цена, ₽</label><input id="a-start" inputmode="numeric" value="480 000" data-num></div>
+          <div class="fld"><label for="a-step">Шаг снижения</label>
+            <select id="a-step"><option value="0.5">0,5 %</option><option value="1" selected>1 %</option><option value="2">2 %</option></select></div>
+        </div>
+        <div class="board">
+          <div class="board__top">
+            <span class="board__lbl">Текущая цена</span>
+            <span class="board__who" id="b-who">торги не начаты</span>
+          </div>
+          <p class="board__price num" id="b-price" aria-live="off">480 000 ₽</p>
+          <div class="board__timer" aria-hidden="true"><i id="b-timer"></i></div>
+          <svg class="chart" id="b-chart" viewBox="0 0 600 220" preserveAspectRatio="none" aria-hidden="true">
+            <line class="chart__work" x1="0" x2="600" y1="0" y2="0"/>
+            <line class="chart__min" x1="0" x2="600" y1="0" y2="0"/>
+            <polyline class="chart__line" points=""/>
+          </svg>
+          <p class="chart__legend"><span class="lg lg--work">рабочая</span><span class="lg lg--min">минимальная</span></p>
+        </div>
+        <div class="auc__btns">
+          <button class="btn btn--hl" type="button" id="a-go">Начать торги</button>
+          <button class="btn btn--hl" type="button" id="a-bid" hidden>Снизить цену</button>
+          <button class="btn btn--ghost" type="button" id="a-quit" hidden>Выйти из&nbsp;торгов</button>
+        </div>
+        <p class="auc__status" id="a-status" role="status" aria-live="polite">Участник 2 и&nbsp;Участник 3 — учебные соперники со&nbsp;своими пределами цены. Время на&nbsp;ход сжато до&nbsp;12&nbsp;секунд.</p>
+        <ol class="auc__log" id="a-log" aria-label="Ход торгов"></ol>
+        <div class="stamp auc__stamp" id="a-stamp" aria-hidden="true"><span>Победа</span></div>
+        <p class="tr__note">Упрощённая учебная модель. Шаг, время и&nbsp;правила торгов зависят от&nbsp;площадки, страны и&nbsp;вида закупки.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ИТОГОВАЯ РАБОТА ============ -->
+<section class="sheet sec" id="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 id="h-final" data-split>Итоговая работа — на&nbsp;настоящей закупке, которую вы найдёте сами</h2>
+    </div>
+    <div class="final">
+      <div class="final__do">
+        <h3>Что делает участник</h3>
+        <ol class="ticks">
+          <li>Сам находит закупку.</li>
+          <li>Заполняет карту закупки и&nbsp;оценивает риски.</li>
+          <li>Рассчитывает экономику и&nbsp;допустимую цену.</li>
+          <li>Готовит учебную заявку.</li>
+          <li>Проходит симуляцию торгов.</li>
+          <li>Составляет план действий после победы.</li>
+        </ol>
+      </div>
+      <div class="protocol">
+        <header class="protocol__head"><span>Протокол проверки</span><span class="protocol__no">критерии</span></header>
+        <ol class="protocol__list">
+          <li>Корректно определяет требования и&nbsp;сроки.</li>
+          <li>Замечает существенные риски.</li>
+          <li>Обосновывает решение об&nbsp;участии.</li>
+          <li>Правильно считает предельную цену.</li>
+          <li>Готовит заявку без критических пропусков.</li>
+        </ol>
+        <div class="stamp protocol__stamp" aria-hidden="true"><span>Зачтено</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ МАТЕРИАЛЫ ============ -->
+<section class="sec materials" id="materials" aria-labelledby="h-mat">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 id="h-mat" data-split>Материалы курса: семь рабочих документов</h2>
+      <p class="lead">Каждый привязан к&nbsp;практике конкретного занятия — с&nbsp;ними участник проходит итоговую работу.</p>
+    </div>
+    <ul class="files">
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-check"/></svg><b>Чек-лист готовности поставщика</b><span>Занятие 2</span></li>
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-search"/></svg><b>Шаблон поиска и&nbsp;оценки закупки</b><span>Занятие 3</span></li>
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-risk"/></svg><b>Карта требований и&nbsp;рисков</b><span>Занятие 4</span></li>
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-calc"/></svg><b>Таблица расчёта цены</b><span>Занятие 5</span></li>
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-doc"/></svg><b>Чек-лист проверки заявки</b><span>Занятие 6</span></li>
+      <li class="file"><svg class="gl" aria-hidden="true"><use href="#i-cal"/></svg><b>Шаблон календаря исполнения договора</b><span>Занятие 8</span></li>
+      <li class="file file--kit"><svg class="gl" aria-hidden="true"><use href="#i-folder"/></svg><b>Учебный комплект документов</b><span>Итоговая практика</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ФОРМАТ ============ -->
+<section class="sheet sheet--2 sec" id="format" aria-labelledby="h-format">
+  <div class="wrap">
+    <div class="sec__head">
+      <h2 id="h-format" data-split>Формат обучения</h2>
+    </div>
+    <ul class="kpi">
+      <li><b class="num">8</b><span>занятий</span></li>
+      <li><b class="num">2 ч</b><span>длится каждое занятие</span></li>
+      <li><b class="num">16 ч</b><span>всего в&nbsp;программе</span></li>
+      <li><b>Новичкам</b><span>уровень: начинающий</span></li>
+    </ul>
+    <dl class="terms">
+      <div><dt>Где проходят занятия</dt><dd><span class="todo" data-todo="онлайн / офлайн, город или площадка">уточняется</span></dd></div>
+      <div><dt>Ближайший поток</dt><dd><span class="todo" data-todo="даты потока и расписание">уточняется</span></dd></div>
+      <div><dt>Стоимость</dt><dd><span class="todo" data-todo="цена и варианты оплаты">уточняется</span></dd></div>
+      <div><dt>Группа</dt><dd><span class="todo" data-todo="размер группы, если есть">уточняется</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ АВТОР ============ -->
+<section class="sec author" id="author" aria-labelledby="h-author">
+  <div class="wrap author__grid">
+    <figure class="author__photo">
+      <div class="author__frame" role="img" aria-label="Место для фотографии Александра Мурашова">
+        <span class="author__mono" aria-hidden="true">АМ</span>
+        <span class="todo todo--block" data-todo="фото автора, вертикальное, от 1200 px">фото</span>
+      </div>
+    </figure>
+    <div class="author__txt">
+      <p class="eyebrow">Автор и&nbsp;ведущий программы</p>
+      <h2 id="h-author" class="author__name">Александр Мурашов</h2>
+      <p class="todo todo--block" data-todo="биография: опыт в закупках, чем занимается сейчас (2–4 предложения)">Здесь будет короткий рассказ об&nbsp;авторе: опыт в&nbsp;закупках и&nbsp;с&nbsp;какой стороны он&nbsp;получен.</p>
+      <ul class="author__facts">
+        <li><span class="todo" data-todo="регалия или факт 1">факт об&nbsp;опыте</span></li>
+        <li><span class="todo" data-todo="регалия или факт 2">факт об&nbsp;опыте</span></li>
+        <li><span class="todo" data-todo="регалия или факт 3">факт об&nbsp;опыте</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ВОПРОСЫ ============ -->
+<section class="sheet sec faq-sec" id="faq" aria-labelledby="h-faq">
+  <div class="wrap faq-grid">
+    <h2 id="h-faq" data-split>Частые вопросы</h2>
+    <div class="faq">
+      <div class="qa">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa1" id="qa1-b">Нужен ли опыт в&nbsp;закупках?<i aria-hidden="true"></i></button></h3>
+        <div class="qa__a" id="qa1" role="region" aria-labelledby="qa1-b"><div><p>Нет. Уровень программы — начинающий. Первое занятие объясняет, как устроены закупки и&nbsp;какая роль у&nbsp;поставщика.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa2" id="qa2-b">Подойдёт ли программа для моей страны и&nbsp;вида закупок?<i aria-hidden="true"></i></button></h3>
+        <div class="qa__a" id="qa2" role="region" aria-labelledby="qa2-b"><div><p>Программа универсальная; конкретные площадки, документы, сроки и&nbsp;правовые требования адаптируются под страну и&nbsp;вид закупок.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa3" id="qa3-b">Будет ли практика?<i aria-hidden="true"></i></button></h3>
+        <div class="qa__a" id="qa3" role="region" aria-labelledby="qa3-b"><div><p>Да, практика есть на&nbsp;каждом из&nbsp;восьми занятий: от&nbsp;схемы закупочного процесса до&nbsp;плана исполнения договора. В&nbsp;конце — итоговая работа на&nbsp;закупке, которую участник находит сам.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa4" id="qa4-b">Что останется после курса?<i aria-hidden="true"></i></button></h3>
+        <div class="qa__a" id="qa4" role="region" aria-labelledby="qa4-b"><div><p>Материалы курса: чек-лист готовности поставщика, шаблон поиска и&nbsp;оценки закупки, карта требований и&nbsp;рисков, таблица расчёта цены, чек-лист проверки заявки, шаблон календаря исполнения договора и&nbsp;учебный комплект документов.</p></div></div>
+      </div>
+      <div class="qa">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa5" id="qa5-b">Сколько стоит и&nbsp;когда старт?<i aria-hidden="true"></i></button></h3>
+        <div class="qa__a" id="qa5" role="region" aria-labelledby="qa5-b"><div><p><span class="todo" data-todo="цена, даты потока, условия оплаты">Стоимость и&nbsp;даты ближайшего потока уточняются</span> — оставьте заявку, и&nbsp;мы сообщим.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЗАПИСЬ ============ -->
+<section class="signup sec" id="signup" data-theme="night" aria-labelledby="h-signup">
+  <div class="wrap signup__grid">
+    <div>
+      <h2 id="h-signup" data-split>Записаться на&nbsp;курс</h2>
+      <p class="lead">Оставьте контакты — расскажем о&nbsp;ближайшем потоке, формате и&nbsp;стоимости.</p>
+      <ul class="contacts" aria-label="Контакты">
+        <li><span>Телефон</span><span class="todo" data-todo="телефон">уточняется</span></li>
+        <li><span>Почта</span><span class="todo" data-todo="e-mail">уточняется</span></li>
+        <li><span>Мессенджер</span><span class="todo" data-todo="Telegram / другой мессенджер">уточняется</span></li>
+      </ul>
+    </div>
+    <form class="form" id="form" novalidate>
+      <div class="fld"><label for="f-name">Как к&nbsp;вам обращаться</label><input id="f-name" name="name" autocomplete="name" required maxlength="80"></div>
+      <div class="fld"><label for="f-contact">Телефон или e-mail</label><input id="f-contact" name="contact" autocomplete="email" required maxlength="120" aria-describedby="f-contact-e"><span class="fld__err" id="f-contact-e"></span></div>
+      <div class="fld"><label for="f-msg">Комментарий <small>(необязательно)</small></label><textarea id="f-msg" name="msg" rows="3" maxlength="1000" placeholder="Например: какие закупки интересуют, компания или ИП"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="f-site">Сайт</label><input id="f-site" name="site" tabindex="-1" autocomplete="off"></div>
+      <label class="consent"><input type="checkbox" id="f-ok" required> <span>Согласен на&nbsp;обработку персональных данных по&nbsp;<a class="link" href="politika.html">политике конфиденциальности</a></span></label>
+      <button class="btn btn--hl btn--wide" type="submit" data-magnetic>Отправить заявку</button>
+      <p class="form__status" id="f-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="ftr" data-theme="night">
+  <div class="wrap">
+    <p class="ftr__big" aria-hidden="true" data-t="От поиска до договора"></p>
+    <div class="ftr__row">
+      <div>
+        <p class="ftr__name">Александр Мурашов</p>
+        <p class="ftr__muted">Программа обучения новичков участию в&nbsp;закупках со&nbsp;стороны поставщика</p>
+        <p class="ftr__muted"><span class="todo" data-todo="ИП / самозанятый / организация, ИНН, ОГРНИП — для договора-оферты">реквизиты уточняются</span></p>
+      </div>
+      <nav class="ftr__nav" aria-label="Подвал">
+        <a class="link" href="#program">Программа</a>
+        <a class="link" href="#trainer">Тренажёр</a>
+        <a class="link" href="#format">Формат</a>
+        <a class="link" href="#signup">Запись</a>
+        <a class="link" href="politika.html">Политика конфиденциальности</a>
+      </nav>
+    </div>
+    <div class="ftr__bottom">
+      <span>© <span id="year">2026</span> Александр Мурашов</span>
+      <button class="ftr__motion" type="button" id="motion-toggle" aria-pressed="false">Остановить анимацию</button>
+    </div>
+  </div>
+</footer>
+
+<a class="mbar" href="#signup">Записаться на&nbsp;курс</a>
+<script src="js/site.js?v=2" defer></script>
+</body>
+</html>
