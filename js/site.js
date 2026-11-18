@@ -75,6 +75,19 @@
       if (r.top < innerHeight * 0.92 && r.bottom > 0) requestAnimationFrame(function () { on(el); });
       else io.observe(el);
     });
+    // подстраховка: при очень быстрой прокрутке IO может «проскочить» блок — проявляем всё, что уже выше низа экрана
+    var pending = els.filter(function (el) { return !el.closest(".hero"); }), t = false;
+    function sweep() {
+      t = false;
+      pending = pending.filter(function (el) {
+        if (el.classList.contains("in") || el.classList.contains("on")) return false;
+        if (el.getBoundingClientRect().top < innerHeight) { on(el); io.unobserve(el); return false; }
+        return true;
+      });
+      if (!pending.length) removeEventListener("scroll", onScroll);
+    }
+    function onScroll() { if (!t) { t = true; setTimeout(sweep, 250); } }
+    addEventListener("scroll", onScroll, { passive: true });
   }
 
   /* ---------- магнитные кнопки ---------- */
